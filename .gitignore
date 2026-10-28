@@ -1,0 +1,9 @@
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+*.zip
+*.rar
+application/cache/*
+!application/cache/index.html
+application/logs/*.php

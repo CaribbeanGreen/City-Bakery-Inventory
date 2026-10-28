@@ -1,0 +1,65 @@
+/* City Bakery Theme 
+   Colors: Warm Brown, Burnt Orange, Cream
+*/
+
+:root {
+    --bakery-primary: #d35400;   /* Burnt Orange */
+    --bakery-dark: #5d4037;      /* Dark Chocolate */
+    --bakery-light: #fdf2e9;     /* Cream */
+    --bakery-accent: #e67e22;    /* Carrot Orange */
+}
+
+body {
+    background-color: var(--bakery-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    background-color: var(--bakery-dark);
+}
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+    color: #fff;
+}
+.navbar-custom .nav-link:hover {
+    color: var(--bakery-accent);
+}
+
+/* Buttons */
+.btn-bakery {
+    background-color: var(--bakery-primary);
+    color: white;
+    border: none;
+}
+.btn-bakery:hover {
+    background-color: var(--bakery-accent);
+    color: white;
+}
+
+/* Cards */
+.card-bakery {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.card-bakery:hover {
+    transform: translateY(-5px);
+}
+
+/* Sidebar (for Dashboard) */
+.sidebar {
+    height: 100vh;
+    background-color: var(--bakery-dark);
+    color: white;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+.sidebar a:hover, .sidebar a.active {
+    background-color: var(--bakery-primary);
+    color: white;
+}
